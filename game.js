@@ -2,7 +2,9 @@ var score = 0;
 var change = 0;
 var power = 1;
 
-postToPage(score);
+var title = new Title('Welcome to the Game'); // Create a title element
+var button = new Button('hello', btnPress);   // Create a button element
+var scr = new Text(score);                    // Create a text element
 
 createButton('Button', btnPress);
 changeTitle('Clicker Game');
