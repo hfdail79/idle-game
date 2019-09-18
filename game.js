@@ -1,14 +1,27 @@
 var score = 0;
+var change = 0;
+var power = 1;
 
 postToPage(score);
 
 createButton('Button', btnPress);
 changeTitle('Clicker Game');
+createButton('Power', btn2Press);
 
-setInterval(btnPress, 1000);
 
 function btnPress() {
-  score++;
-  postToPage(score);
+  score = score + power
+  postToPage(score, power);
 }
+
+function btn2Press(){
+  if(score >= power){
+  
+  score = (score - power)
+  power = (power + power / 5) 
+  text(power,10,30);
+  
+}
+}
+
 
