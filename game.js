@@ -8,8 +8,6 @@ var button = new Button('hello', btnPress);   // Create a button element
 var Btn = new Button('Button', btnPress);
 var Power = new Button('Power', btn2Press);
 // Create a text element
-
-
 function btnPress() {
   score = score + power
   postToPage(score);
@@ -20,9 +18,5 @@ function btn2Press(){
   
   score = (score - power)
   power = (power + power / 5) 
-  
-  
 }
 }
-
-
