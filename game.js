@@ -1,22 +1,24 @@
-var score = 0;
-var change = 0;
+var bread = 0;
+var pigeons = 0;
 var power = 1;
+var price = 10
 
-var title = new Title('Welcome to the Game'); // Create a title element
-var button = new Button('hello', btnPress);   // Create a button element
+var title = new Title('Bird Up'); // Create a title element
+var feed = new Button('Tame Pigeon', btn2Press);   // Create a button element
 
-var Btn = new Button('Button', btnPress);
-var Power = new Button('Power', btn2Press);
-// Create a text element
+var sfb = new Button('Scavenge for bread', btnPress);
+var bc = new Text(bread);
+
 function btnPress() {
-  score = score + power
-  postToPage(score);
+  bread = bread + power
+  
 }
 
+
 function btn2Press(){
-  if(score >= power){
+  if(bread >= price){
   
-  score = (score - power)
-  power = (power + power / 5) 
+  bread = (bread - price)
+  pigeons = (pigeons + pigeons / 5) 
 }
 }
