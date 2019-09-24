@@ -7,7 +7,6 @@ var title = new Title('Bird Up'); // Create a title element
 var feed = new Button('Tame Pigeon', btn2Press);   // Create a button element
 
 var sfb = new Button('Scavenge for bread', btnPress);
-var bc = new Text(bread);
 
 function btnPress() {
   bread = bread + power
